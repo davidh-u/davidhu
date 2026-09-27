@@ -616,3 +616,50 @@ button:focus-visible {
         gap: 12px;
     }
 }
+
+
+/* Research page figures */
+
+.area-grid {
+    grid-template-columns: 1fr 360px;
+}
+
+.research-area.flip .area-grid {
+    grid-template-columns: 360px 1fr;
+}
+
+.research-fig {
+    margin: 0;
+}
+
+.research-fig img {
+    width: 100%;
+    display: block;
+    border: 1px solid var(--line);
+}
+
+.research-fig a:hover img {
+    opacity: 0.92;
+}
+
+.research-fig figcaption {
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 8px;
+    line-height: 1.45;
+}
+
+.research-fig.wide {
+    margin-top: 18px;
+}
+
+.research-area.below .area-grid {
+    grid-template-columns: 1fr;
+}
+
+@media (max-width: 900px) {
+    .area-grid,
+    .research-area.flip .area-grid {
+        grid-template-columns: 1fr;
+    }
+}
