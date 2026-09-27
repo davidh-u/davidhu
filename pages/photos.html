@@ -7,11 +7,21 @@
 
     <title>Photos | David Hernández Uribe</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪨</text></svg>">
 </head>
 
 <body>
+
+    <!-- Thin-section banner: upload your photomicrograph as images/thin-section.jpg -->
+    <div class="banner">
+        <img src="../images/thin-section.jpg" alt="" onerror="this.remove()">
+    </div>
+
+    <div class="page">
 
     <header>
         <h1>David Hernández Uribe</h1>
@@ -25,7 +35,7 @@
             <a href="research.html">Research</a>
             <a href="team.html">Team</a>
             <a href="publications.html">Publications</a>
-            <a href="photos.html">Photos</a>
+            <a href="photos.html" aria-current="page">Photos</a>
             <a href="cv.html">CV</a>
         </nav>
     </header>
@@ -35,39 +45,43 @@
         <h2>Photos</h2>
 
         <p class="photo-intro">
-            Fieldwork and places we've worked. Click any photo to see it larger.
+            Fieldwork, the places our research takes us, and life outside the lab. Click any photo to see it larger.
         </p>
 
         <!--
             HOW TO ADD A PHOTO:
-            1. Upload the photo into the folder  images/field/  in the repository.
-            2. Copy one <figure> ... </figure> block below.
+            1. Upload field photos to  images/field/  and sports photos to  images/sports/
+            2. In the right section below, copy the example <figure> block (and remove its comment lines).
             3. Change the file name in BOTH places (src and data-full) and write your caption.
-            Photos appear in the order they are listed here.
         -->
-        <div class="gallery">
 
+        <h3 class="photo-section">In the field</h3>
+        <p class="photo-intro"><em>Photos coming soon.</em></p>
+        <div class="gallery">
+            <!-- EXAMPLE PHOTO (hidden). To use: remove the start and end comment lines, then copy the <figure> block for each photo.
             <figure>
                 <button type="button" data-full="../images/field/photo1.jpg">
                     <img src="../images/field/photo1.jpg" alt="Describe the photo here" loading="lazy">
                 </button>
-                <figcaption>Caption: place, year, and who is in the photo.</figcaption>
+                <figcaption>Caption goes here.</figcaption>
             </figure>
+            END OF EXAMPLE PHOTO -->
+        </div>
 
+        <h3 class="photo-section">Off the clock</h3>
+        <p class="photo-intro">
+            When I'm not looking at rocks, I'm probably watching sports: Cruz Azul (always), the World Cup, baseball, and football.
+        </p>
+        <p class="photo-intro"><em>Photos coming soon.</em></p>
+        <div class="gallery">
+            <!-- EXAMPLE PHOTO (hidden). To use: remove the start and end comment lines, then copy the <figure> block for each photo.
             <figure>
-                <button type="button" data-full="../images/field/photo2.jpg">
-                    <img src="../images/field/photo2.jpg" alt="Describe the photo here" loading="lazy">
+                <button type="button" data-full="../images/sports/photo1.jpg">
+                    <img src="../images/sports/photo1.jpg" alt="Describe the photo here" loading="lazy">
                 </button>
-                <figcaption>Caption: place, year, and who is in the photo.</figcaption>
+                <figcaption>Caption goes here.</figcaption>
             </figure>
-
-            <figure>
-                <button type="button" data-full="../images/field/photo3.jpg">
-                    <img src="../images/field/photo3.jpg" alt="Describe the photo here" loading="lazy">
-                </button>
-                <figcaption>Caption: place, year, and who is in the photo.</figcaption>
-            </figure>
-
+            END OF EXAMPLE PHOTO -->
         </div>
 
     </main>
@@ -97,6 +111,8 @@
         box.querySelector('.lightbox-close').addEventListener('click', function () { box.close(); });
         box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
     </script>
+
+    </div>
 
 </body>
 
