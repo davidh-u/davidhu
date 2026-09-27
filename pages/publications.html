@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,12 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Publications</title>
+    <title>Publications | David Hernández Uribe</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪨</text></svg>">
 </head>
 
 <body>
+
+    <div class="banner"></div>
+
+    <div class="page">
 
     <header>
         <h1>David Hernández Uribe</h1>
@@ -24,178 +31,132 @@
             <a href="../index.html">Home</a>
             <a href="research.html">Research</a>
             <a href="team.html">Team</a>
-            <a href="publications.html">Publications</a>
-            <a href="cv.html">CV</a>
+            <a href="publications.html" aria-current="page">Publications</a>
+            <a href="photos.html">Photos</a>
         </nav>
     </header>
 
-    <main>
+    <div class="layout">
 
-        <h2>Publications</h2>
+        <aside class="sidebar">
 
+            <img class="avatar" src="../profile.jpg" alt="David Hernández Uribe">
 
-        <h3>Economic Geology</h3>
+            <p class="sidebar-name">David Hernández Uribe</p>
 
-        <p>
-            <strong>Hernández-Uribe, D.</strong>, & Tassara, S. (2025).
-            <a href="https://doi.org/10.1130/G53405.1" target="_blank">
-                Source-oxidized and (super-)wet magmas explain porphyry copper fertility vectors: A thermodynamic modeling approach.
-            </a>
-            <em>Geology, 53</em>(12), 995–1000.
-        </p>
+            <p class="sidebar-position">
+                Assistant Professor<br>
+                Department of Earth and Environmental Sciences<br>
+                University of Illinois Chicago
+            </p>
 
+            <ul class="sidebar-links">
+                <li>
+                    <a href="mailto:davidhu@uic.edu">
+                        <!-- envelope icon -->
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.4 7H19.6L12 12.2zM4 8.8V17h16V8.8l-7.4 5a1 1 0 0 1-1.2 0L4 8.8z"/></svg>
+                        Email
+                    </a>
+                </li>
+                <li>
+                    <a href="https://scholar.google.com/citations?user=upvPowYAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+                        <!-- graduation-cap icon -->
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v4L12 21l7-3.8v-4L12 17l-7-3.8z"/></svg>
+                        Google Scholar
+                    </a>
+                </li>
+            </ul>
 
-        <h3>Seismicity</h3>
+        </aside>
 
-        <p>
-            Gutiérrez-Aguilar, F.*, <strong>Hernández-Uribe, D.</strong>,
-            Holder, R. M., & Condit, C. B. (2022).
-            <a href="https://doi.org/10.1029/2022GL100814" target="_blank">
-                Fluid-induced fault reactivation due to brucite + antigorite dehydration triggered the Mw 7.1 September 19 Puebla-Morelos (Mexico) intermediate-depth earthquake.
-            </a>
-            <em>Geophysical Research Letters, 49</em>(20), e2022GL100814.
-        </p>
+        <!-- ===== Main content ===== -->
+        <main>
 
-        <p>
-            Lindquist, P. C., Condit, C. B., Hoover, W. F.,
-            <strong>Hernández-Uribe, D.</strong>, & Guevara, V. E. (2023).
-            <a href="https://doi.org/10.1029/2023GC010981" target="_blank">
-                Metasomatism and slow slip: Talc production along the flat subduction plate interface beneath Mexico (Guerrero).
-            </a>
-            <em>Geochemistry, Geophysics, Geosystems, 24</em>(8), e2023GC010981.
-        </p>
+            <section>
+                <h2>Publications</h2>
+                <p class="updated">Last updated: September 27, 2026. For the most recent list, see my <a href="https://scholar.google.com/citations?user=upvPowYAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar profile</a>.</p>
 
+                <figure class="placeholder wide">
+                    <!-- REPLACE this box with your image, for example:
+                         <img src="../images/research/your-image.jpg" alt="Short description"> -->
+                    <div class="placeholder-box">Image placeholder<br>e.g., a favorite figure or cover image from a paper</div>
+                    <figcaption>Caption for the image.</figcaption>
+                </figure>
 
-        <h3>Formation of Earth's First Continents</h3>
+                <p class="pub-key"><sup>†</sup> UIC graduate student advisee &nbsp; <sup>‡</sup> UIC postdoctoral advisee &nbsp; * student co-author &nbsp; <sup>✉</sup> co-corresponding author</p>
 
-        <p>
-            <strong>Hernández-Uribe, D.</strong> (2024).
-            <a href="https://doi.org/10.1038/s41561-024-01489-z" target="_blank">
-                Generation of Archaean oxidizing and wet magmas from mafic crustal overthickening.
-            </a>
-            <em>Nature Geoscience, 17</em>, 809–813.
-        </p>
+                <h3 class="pub-year">In press</h3>
+                <ol class="pubs" reversed>
+                    <li value="28">Li, S.-S., Li, B., Sun, Y.-H., Deng, J., Leitchenkov, G., Szilas, K., <strong>Hernández-Uribe, D.</strong>, Talalay, P., Zhang, N., Fan, X.-P., Li, Y.-Z., Gong, D., Zou, Y.-Z., Li, J.-H., &amp; Qiu, K.-F. (in press). Scandium enrichment and release in pyroxene driven by melt and fluid metasomatism: Insights from East Gondwana, Antarctica. <em>American Mineralogist</em>. DOI: <a href="https://doi.org/10.2138/am-2025-10035" target="_blank" rel="noopener">10.2138/am-2025-10035</a>.</li>
+                </ol>
+                <h3 class="pub-year">2026</h3>
+                <ol class="pubs" reversed>
+                    <li value="31">Pramanik, S.<sup>†</sup><sup>✉</sup>, <strong>Hernández-Uribe, D.</strong><sup>✉</sup>, &amp; Dombard, A. J. (2026). Early water on Mars hindered subduction-driven plate tectonics. <em>Journal of Geophysical Research: Planets</em>, 131(8), e2026JE009718. DOI: <a href="https://doi.org/10.1029/2026JE009718" target="_blank" rel="noopener">10.1029/2026JE009718</a>.</li>
+                    <li value="30">Tassara, S., Inostroza, A., Olivares, A., <strong>Hernández-Uribe, D.</strong>, Reich, M., Barra, F., Romero, R., Ague, J. J., Tardani, D., &amp; de los Santos Valderrama, C. (2026). The temporal redox and volatile evolution of magmas that formed a supergiant porphyry copper deposit. <em>Earth and Planetary Science Letters</em>, 120139. DOI: <a href="https://doi.org/10.1016/j.epsl.2026.120139" target="_blank" rel="noopener">10.1016/j.epsl.2026.120139</a>.</li>
+                    <li value="29">Wang, J. W., Kapp, P., Holder, R. M., He, J., <strong>Hernández-Uribe, D.</strong>, &amp; Worthington, J. (2026). Polycyclic metamorphism, exhumation, and recycling of subduction complex rocks, Cedros Island, Baja California. <em>Tectonics</em>, e2025TC009340. DOI: <a href="https://doi.org/10.1029/2025TC009340" target="_blank" rel="noopener">10.1029/2025TC009340</a>.</li>
+                </ol>
+                <h3 class="pub-year">2025</h3>
+                <ol class="pubs" reversed>
+                    <li value="27"><strong>Hernández-Uribe, D.</strong> &amp; Tassara, S. (2025). Source-oxidized and (super-) wet magmas explain porphyry copper fertility vectors: A thermodynamic modeling approach. <em>Geology</em>, 53(12), 995–1000. DOI: <a href="https://doi.org/10.1130/G53405.1" target="_blank" rel="noopener">10.1130/G53405.1</a>.</li>
+                    <li value="26">Jiang, X., Chen, X., Schertl, H. P., Hoare, L., Cambeses, A., <strong>Hernández-Uribe, D.</strong>, Xu, R., Zheng, Y., &amp; Zhang, W. (2025). Rutile petrochronology and titanium isotope compositions record multiple melt–fluid–rock interactions in a continental subduction zone. <em>Geochimica et Cosmochimica Acta</em>, 400, 94–114. DOI: <a href="https://doi.org/10.1016/j.gca.2025.05.024" target="_blank" rel="noopener">10.1016/j.gca.2025.05.024</a>.</li>
+                    <li value="25">Donoso-Tapia, D.*, Flores, K. E., Martin, C., Hull, S., &amp; <strong>Hernández-Uribe, D.</strong> (2025). Record of de-serpentinization and re-serpentinization of an exhumed slab sliver: Implications for fluid circulation in subduction zones. <em>Earth and Planetary Science Letters</em>, 653, 119213. DOI: <a href="https://doi.org/10.1016/j.epsl.2025.119213" target="_blank" rel="noopener">10.1016/j.epsl.2025.119213</a>.</li>
+                </ol>
+                <h3 class="pub-year">2024</h3>
+                <ol class="pubs" reversed>
+                    <li value="24"><strong>Hernández-Uribe, D.</strong> (2024). Generation of Archaean oxidizing and wet magmas from mafic crustal overthickening. <em><strong>Nature Geoscience</strong></em>, 17, 809–813. DOI: <a href="https://doi.org/10.1038/s41561-024-01489-z" target="_blank" rel="noopener">10.1038/s41561-024-01489-z</a>.</li>
+                    <li value="23"><strong>Hernández-Uribe, D.</strong>, Holder, R. M., &amp; Hernández-Montenegro, J. D. (2024). Eclogite thermobarometry: The consistency between conventional thermobarometry and forward phase-equilibrium modelling. <em>Journal of Metamorphic Geology</em>, 42(1), 89–108. DOI: <a href="https://doi.org/10.1111/jmg.12747" target="_blank" rel="noopener">10.1111/jmg.12747</a>.</li>
+                    <li value="22">Zheng, Y., Chen, X., Palmer, M. R., Zhao, K., <strong>Hernández-Uribe, D.</strong>, Gao, S., &amp; Wu, S. (2024). Magma mixing and magmatic-to-hydrothermal fluid evolution revealed by chemical and boron isotopic signatures in tourmaline from the Zhunuo–Beimulang porphyry Cu-Mo deposits. <em>Mineralium Deposita</em>, 1–21. DOI: <a href="https://doi.org/10.1007/s00126-024-01255-6" target="_blank" rel="noopener">10.1007/s00126-024-01255-6</a>.</li>
+                </ol>
+                <h3 class="pub-year">2023</h3>
+                <ol class="pubs" reversed>
+                    <li value="21"><strong>Hernández-Uribe, D.</strong> &amp; Tsujimori, T. (2023). Progressive lawsonite eclogitization of the oceanic crust: implications for deep mass transfer in subduction zones. <em>Geology</em>, 51(7), 678–682. DOI: <a href="https://doi.org/10.1130/G51052.1" target="_blank" rel="noopener">10.1130/G51052.1</a>.</li>
+                    <li value="20"><strong>Hernández-Uribe, D.</strong>, Mattinson, C. G., Regel, M. E., Zhang, J. X., Stubbs, K. A., &amp; Kylander-Clark, A. R. C. (2023). Protracted eclogite-facies metamorphism of the Dulan area, North Qaidam ultrahigh-pressure terrane. <em>Journal of Metamorphic Geology</em>, 41(4), 557–581. DOI: <a href="https://doi.org/10.1111/jmg.12708" target="_blank" rel="noopener">10.1111/jmg.12708</a>.</li>
+                    <li value="19">Li, S. S., Qiu, K. F., <strong>Hernández-Uribe, D.</strong>, Gao, Y. X., Santosh, M., Huang, H. C., Zheng, Z. Y., Zhang, Z. L., &amp; Gao, S. C. (2023). Water recycling in the deep earth: Insights from integrated μ-XRF, THz-TDS spectroscopy, TG and DSC of high-pressure granulite. <em>Journal of Geophysical Research: Solid Earth</em>, 128(3), e2022JB025915. DOI: <a href="https://doi.org/10.1029/2022JB025915" target="_blank" rel="noopener">10.1029/2022JB025915</a>.</li>
+                    <li value="18">Lindquist, P. C., Condit, C. B., Hoover, W. F., <strong>Hernández-Uribe, D.</strong>, &amp; Guevara, V. E. (2023). Metasomatism and slow slip: Talc production along the flat subduction plate interface beneath Mexico (Guerrero). <em>Geochemistry, Geophysics, Geosystems</em>, 24(8), e2023GC010981. DOI: <a href="https://doi.org/10.1029/2023GC010981" target="_blank" rel="noopener">10.1029/2023GC010981</a>.</li>
+                    <li value="17">Palin, R. M., Palmer, Z., Holm-Denoma, C., <strong>Hernández-Uribe, D.</strong>, &amp; Hernández-Montenegro, J. D. (2023). On the occurrence of amphibolite-facies sapphirine, spinel, phlogopite, anorthite, and corundum in the Wet Mountains, Colorado, USA. <em>Lithos</em>, 440–441, 107024. DOI: <a href="https://doi.org/10.1016/j.lithos.2023.107024" target="_blank" rel="noopener">10.1016/j.lithos.2023.107024</a>.</li>
+                    <li value="16">Chen, X., Jiang, S., Palmer, M. R., Schertl, H. P., Cambeses, A., <strong>Hernández-Uribe, D.</strong>, &amp; Zheng, Y. (2023). Tourmaline chemistry, boron, and strontium isotope systematics trace multiple melt–fluid–rock interaction stages in deeply subducted continental crust. <em>Geochimica et Cosmochimica Acta</em>, 340, 120–140. DOI: <a href="https://doi.org/10.1016/j.gca.2022.11.019" target="_blank" rel="noopener">10.1016/j.gca.2022.11.019</a>.</li>
+                </ol>
+                <h3 class="pub-year">2022</h3>
+                <ol class="pubs" reversed>
+                    <li value="15"><strong>Hernández-Uribe, D.</strong> (2022). A re-evaluation of the peak P–T conditions of eclogite-facies metamorphism of the Paleozoic Acatlán Complex (Mexico) reveals deeper subduction. <em>Scientific Reports</em>, 12, 1–7. DOI: <a href="https://doi.org/10.1038/s41598-022-25992-8" target="_blank" rel="noopener">10.1038/s41598-022-25992-8</a>.</li>
+                    <li value="14">Gutiérrez-Aguilar, F.*, <strong>Hernández-Uribe, D.</strong>, Holder, R. M., &amp; Condit, C. B. (2022). Fluid-induced fault reactivation due to brucite + antigorite dehydration triggered the M<sub>w</sub> 7.1 September 19th Puebla-Morelos (Mexico) intermediate-depth earthquake. <em>Geophysical Research Letters</em>, 49(20), e2022GL100814. DOI: <a href="https://doi.org/10.1029/2022GL100814" target="_blank" rel="noopener">10.1029/2022GL100814</a>.</li>
+                    <li value="13"><strong>Hernández-Uribe, D.</strong>, Spera, F. J., Bohrson, W. A., &amp; Heinonen, J. S. (2022). A comparative study of two phase equilibria modeling tools: MORB equilibrium states at variable pressure and H<sub>2</sub>O concentrations. <em>American Mineralogist</em>, 107, 1789–1806. DOI: <a href="https://doi.org/10.2138/am-2022-8211" target="_blank" rel="noopener">10.2138/am-2022-8211</a>.</li>
+                    <li value="12">Chen, X., Schertl, H. P., Hart, E., Majka, J., Cambeses, A., <strong>Hernández-Uribe, D.</strong>, &amp; Zheng, Y. (2022). Mobilization and fractionation of Ti-Nb-Ta during exhumation of deeply subducted continental crust. <em>Geochimica et Cosmochimica Acta</em>, 319, 271–295. DOI: <a href="https://doi.org/10.1016/j.gca.2021.11.024" target="_blank" rel="noopener">10.1016/j.gca.2021.11.024</a>.</li>
+                </ol>
+                <h3 class="pub-year">2021</h3>
+                <ol class="pubs" reversed>
+                    <li value="11"><strong>Hernández-Uribe, D.</strong> &amp; Gutiérrez-Aguilar, F.* (2021). The versatility of petrological modeling: thermobarometry of high-pressure metabasites from the Renge and Sanbagawa belts and phase evolution during warm subduction at Nankai. <em>Island Arc</em>, e12406. DOI: <a href="https://doi.org/10.1111/iar.12406" target="_blank" rel="noopener">10.1111/iar.12406</a>.</li>
+                    <li value="10">Gutiérrez-Aguilar, F.*, <strong>Hernández-Uribe, D.</strong>, Vite-Sánchez, O., Schaaf, P., Arrieta-García, G. F., Solís-Pichardo, G., &amp; Hernández-Treviño, T. (2021). New insights into the petrogenesis of the Puerto Vallarta Batholith, Mexico: Evidence from petrology, zircon petrochronology, and phase equilibrium modeling. <em>Journal of South American Earth Sciences</em>, 109, 103297. DOI: <a href="https://doi.org/10.1016/j.jsames.2021.103297" target="_blank" rel="noopener">10.1016/j.jsames.2021.103297</a>.</li>
+                    <li value="9">Hernández-Montenegro, J. D., Palin, R. M., Zuluaga, C. A., &amp; <strong>Hernández-Uribe, D.</strong> (2021). Archean continental crust formed by magma hybridization and voluminous partial melting. <em>Scientific Reports</em>, 11, 1–9. DOI: <a href="https://doi.org/10.1038/s41598-021-84300-y" target="_blank" rel="noopener">10.1038/s41598-021-84300-y</a>.</li>
+                </ol>
+                <h3 class="pub-year">2020</h3>
+                <ol class="pubs" reversed>
+                    <li value="8"><strong>Hernández-Uribe, D.</strong>, Hernández-Montenegro, J. D.*, Cone, K. A., &amp; Palin, R. M. (2020). Oceanic slab-top melting during subduction: implications for trace-element recycling and adakite petrogenesis. <em>Geology</em>, 48(3), 216–220. DOI: <a href="https://doi.org/10.1130/G46835.1" target="_blank" rel="noopener">10.1130/G46835.1</a>.</li>
+                    <li value="7"><strong>Hernández-Uribe, D.</strong>, Palin, R. M., Cone, K. A., &amp; Cao, W. (2020). Petrological implications of seafloor hydrothermal alteration of subducted mid-ocean ridge basalt. <em>Journal of Petrology</em>, 61(9), 1–18. DOI: <a href="https://doi.org/10.1093/petrology/egaa086" target="_blank" rel="noopener">10.1093/petrology/egaa086</a>.</li>
+                    <li value="6">Palin, R. M., Santosh, M., Cao, W., Li, S. S., <strong>Hernández-Uribe, D.</strong>, &amp; Parsons, A. (2020). Secular metamorphic change and the onset of plate tectonics. <em>Earth-Science Reviews</em>, 207, 103172. DOI: <a href="https://doi.org/10.1016/j.earscirev.2020.103172" target="_blank" rel="noopener">10.1016/j.earscirev.2020.103172</a>.</li>
+                </ol>
+                <h3 class="pub-year">2019</h3>
+                <ol class="pubs" reversed>
+                    <li value="5"><strong>Hernández-Uribe, D.</strong> &amp; Palin, R. M. (2019). Catastrophic shear-removal of subcontinental lithospheric mantle beneath the Colorado Plateau by the subducted Farallon slab. <em>Scientific Reports</em>, 9, 8153. DOI: <a href="https://doi.org/10.1038/s41598-019-44628-y" target="_blank" rel="noopener">10.1038/s41598-019-44628-y</a>.</li>
+                    <li value="4"><strong>Hernández-Uribe, D.</strong> &amp; Palin, R. M. (2019). A revised petrological model for subducted oceanic crust: insights from phase equilibrium modelling. <em>Journal of Metamorphic Geology</em>, 37, 745–768. DOI: <a href="https://doi.org/10.1111/jmg.12483" target="_blank" rel="noopener">10.1111/jmg.12483</a>.</li>
+                    <li value="3"><strong>Hernández-Uribe, D.</strong>, Gutiérrez-Aguilar, F.*, Mattinson, C. G., Palin, R. M., &amp; Neill, O. K. (2019). A new record of deeper and colder subduction in the Acatlán complex, Mexico: Evidence from phase equilibrium modelling and Zr-in-rutile thermometry. <em>Lithos</em>, 324, 551–568. DOI: <a href="https://doi.org/10.1016/j.lithos.2018.10.003" target="_blank" rel="noopener">10.1016/j.lithos.2018.10.003</a>.</li>
+                </ol>
+                <h3 class="pub-year">2018</h3>
+                <ol class="pubs" reversed>
+                    <li value="2"><strong>Hernández-Uribe, D.</strong>, Mattinson, C. G., &amp; Zhang, J. X. (2018). Phase equilibrium modelling and implications for P–T determinations of medium-temperature UHP eclogites, North Qaidam terrane, China. <em>Journal of Metamorphic Geology</em>, 36(9), 1237–1261. DOI: <a href="https://doi.org/10.1111/jmg.12444" target="_blank" rel="noopener">10.1111/jmg.12444</a>.</li>
+                </ol>
+                <h3 class="pub-year">2016</h3>
+                <ol class="pubs" reversed>
+                    <li value="1">Maldonado, R., Ortega-Gutiérrez, F., &amp; <strong>Hernández-Uribe, D.</strong> (2016). Garnet–chloritoid–paragonite metapelite from the Chuacús Complex (central Guatemala): new evidence for continental subduction in the North America–Caribbean plate boundary. <em>European Journal of Mineralogy</em>, 28, 1169–1186. DOI: <a href="https://doi.org/10.1127/ejm/2016/0028-2578" target="_blank" rel="noopener">10.1127/ejm/2016/0028-2578</a>.</li>
+                </ol>
+            </section>
 
-        <p>
-            Palin, R. M., Santosh, M., Cao, W., Li, S. S.,
-            <strong>Hernández-Uribe, D.</strong>, & Parsons, A. (2020).
-            <a href="https://doi.org/10.1016/j.earscirev.2020.103172" target="_blank">
-                Secular metamorphic change and the onset of plate tectonics.
-            </a>
-            <em>Earth-Science Reviews, 207</em>, 103172.
-        </p>
+        </main>
 
-        <p>
-            Hernández-Montenegro, J. D., Palin, R. M., Zuluaga, C. A.,
-            & <strong>Hernández-Uribe, D.</strong> (2021).
-            <a href="https://doi.org/10.1038/s41598-021-84300-y" target="_blank">
-                Archean continental crust formed by magma hybridization and voluminous partial melting.
-            </a>
-            <em>Scientific Reports, 11</em>(1), 5263.
-        </p>
+    </div>
 
-
-        <h3>Subduction-Zone Processes</h3>
-
-        <p>
-            <strong>Hernández-Uribe, D.</strong>, & Tsujimori, T. (2023).
-            <a href="https://doi.org/10.1130/G51052.1" target="_blank">
-                Progressive lawsonite eclogitization of the oceanic crust: Implications for deep mass transfer in subduction zones.
-            </a>
-            <em>Geology, 51</em>(7), 678–682.
-        </p>
-
-        <p>
-            <strong>Hernández-Uribe, D.</strong>, Hernández-Montenegro, J. D.,
-            Cone, K. A., & Palin, R. M. (2020).
-            <a href="https://doi.org/10.1130/G46835.1" target="_blank">
-                Oceanic slab-top melting during subduction: Implications for trace-element recycling and adakite petrogenesis.
-            </a>
-            <em>Geology, 48</em>(3), 216–220.
-        </p>
-
-        <p>
-            <strong>Hernández-Uribe, D.</strong>, & Palin, R. M. (2019).
-            <a href="https://doi.org/10.1111/jmg.12483" target="_blank">
-                A revised petrological model for subducted oceanic crust: Insights from phase equilibrium modelling.
-            </a>
-            <em>Journal of Metamorphic Geology, 37</em>, 745–768.
-        </p>
-
-
-        <h3>Metamorphic Petrology and Tectonics</h3>
-
-        <p>
-            <strong>Hernández-Uribe, D.</strong>, Mattinson, C. G., Regel, M. E.,
-            Zhang, J., Stubbs, K. A., & Kylander-Clark, A. R. (2023).
-            <a href="https://doi.org/10.1111/jmg.12708" target="_blank">
-                Protracted eclogite-facies metamorphism of the Dulan area, North Qaidam ultrahigh-pressure terrane: Insights on zircon growth during continental subduction and collision.
-            </a>
-            <em>Journal of Metamorphic Geology, 41</em>(4), 557–581.
-        </p>
-
-        <p>
-            <strong>Hernández-Uribe, D.</strong>, & Palin, R. M. (2019).
-            <a href="https://doi.org/10.1038/s41598-019-44628-y" target="_blank">
-                Catastrophic shear-removal of subcontinental lithospheric mantle beneath the Colorado Plateau by the subducted Farallon slab.
-            </a>
-            <em>Scientific Reports, 9</em>(1), 8153.
-        </p>
-
-        <p>
-            <strong>Hernández-Uribe, D.</strong>, Gutiérrez-Aguilar, F.,
-            Mattinson, C. G., Palin, R. M., & Neill, O. K. (2019).
-            <a href="https://doi.org/10.1016/j.lithos.2018.10.003" target="_blank">
-                A new record of deeper and colder subduction in the Acatlán complex, Mexico: Evidence from phase equilibrium modelling and Zr-in-rutile thermometry.
-            </a>
-            <em>Lithos, 324</em>, 551–568.
-        </p>
-
-        <p>
-            <strong>Hernández-Uribe, D.</strong>, Mattinson, C. G., & Zhang, J. X. (2018).
-            <a href="https://doi.org/10.1111/jmg.12444" target="_blank">
-                Phase equilibrium modelling and implications for P–T determinations of medium-temperature UHP eclogites, North Qaidam terrane, China.
-            </a>
-            <em>Journal of Metamorphic Geology, 36</em>(9), 1237–1261.
-        </p>
-
-
-        <h3>Phase Equilibria</h3>
-
-        <p>
-            <strong>Hernández-Uribe, D.</strong>, Holder, R. M.,
-            & Hernández-Montenegro, J. D. (2024).
-            <a href="https://doi.org/10.1111/jmg.12747" target="_blank">
-                Eclogite thermobarometry: Consistency between conventional thermobarometry and forward phase-equilibrium modelling.
-            </a>
-            <em>Journal of Metamorphic Geology, 42</em>(1), 89–108.
-        </p>
-
-        <p>
-            <strong>Hernández-Uribe, D.</strong>, Spera, F. J., Bohrson, W. A.,
-            & Heinonen, J. S. (2022).
-            <a href="https://doi.org/10.2138/am-2022-8211" target="_blank">
-                A comparative study of two phase equilibria modeling tools: MORB equilibrium states at variable pressure and H2O concentrations.
-            </a>
-            <em>American Mineralogist.</em>
-        </p>
-
-        <p>
-            <strong>Hernández-Uribe, D.</strong> & Gutiérrez-Aguilar, F. (2021).
-            <a href="https://doi.org/10.1111/iar.12406" target="_blank">
-                The versatility of petrological modeling: Thermobarometry of high-pressure metabasites from the Renge and Sanbagawa belts and phase evolution during warm subduction at Nankai.
-            </a>
-            <em>Island Arc</em>, e12406.
-        </p>
-
-
-        <p>
-            <a href="../index.html">Back to Home</a>
-        </p>
-
-    </main>
+    </div>
 
 </body>
 
 </html>
-```
