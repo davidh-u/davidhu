@@ -29,19 +29,11 @@ body {
 }
 
 
-/* Thin-section banner */
+/* Blue strip across the top */
 
 .banner {
-    border-bottom: 4px solid var(--uic-red);
+    height: 8px;
     background: var(--uic-blue);
-    min-height: 6px;
-}
-
-.banner img {
-    display: block;
-    width: 100%;
-    height: 130px;
-    object-fit: cover;
 }
 
 
@@ -386,9 +378,6 @@ button:focus-visible {
         padding: 24px 22px 48px;
     }
 
-    .banner img {
-        height: 80px;
-    }
 
     h1 {
         font-size: 32px;
