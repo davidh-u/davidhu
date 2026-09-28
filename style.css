@@ -667,3 +667,31 @@ button:focus-visible {
 .pub-photo {
     margin: 10px 0 24px;
 }
+
+/* Photo gallery: three per row */
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gallery.gallery-two {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 520px) {
+    .gallery.gallery-two {
+        grid-template-columns: 1fr;
+    }
+}
