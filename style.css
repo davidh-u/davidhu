@@ -663,3 +663,7 @@ button:focus-visible {
         grid-template-columns: 1fr;
     }
 }
+
+.pub-photo {
+    margin: 10px 0 24px;
+}
